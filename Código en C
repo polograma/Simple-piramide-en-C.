@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(int argc, char const *argv[])
+{
+	int numero, i;
+	printf("Numero: \n");
+	scanf("%d", &numero);
+	for (i = 1; i < numero+1; i++){ //For loop -> (inicializacion; condicion; actualizacion). 
+		printf("\n"); //Deja un espacio por cada vuelta.
+		for (int j = 1; j < i+1; j++){  //Imprime por i cantidad de veces el simbolo.
+			printf("*");
+		}
+	}
+    printf("\n");
+	return 0;
+}
